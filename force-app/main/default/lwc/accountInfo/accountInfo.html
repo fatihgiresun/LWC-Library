@@ -8,7 +8,7 @@
       </div>
       <div slot="footer">
     İlgili Account Burada
-      </div>,
+      </div>
       <template if:true={accBilgi.data}>
 
     <lightning-record-form
@@ -21,15 +21,14 @@
   </lightning-record-form>
       </template>
 
-      <template if:false={accBilgi.error}>
+      <template if:false={accBilgi.data}>
+
         <div class="slds-text-color_error">
             bir hata oluştu
         </div>
+
       </template>
 
 
-      
-
-      </div>
     </lightning-card>
 </template>
